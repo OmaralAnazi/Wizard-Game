@@ -55,7 +55,7 @@ function playAnimations() {
 function endGame() {
     isWaiting = true
     const endMessage = wizard.dead && monster.dead? "No victors - all creatures are dead" :
-                       wizard.dead ? "The Wizard Wins" : "The monsters are Victorious"
+                       !wizard.dead ? "The Wizard Wins" : "The monsters are Victorious"
 
     const endEmoji = !wizard.dead ? "🔮" : "☠️"
 
